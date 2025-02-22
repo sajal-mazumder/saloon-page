@@ -1,0 +1,533 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#header{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), #019587), url(../srcs/saloon4.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 3%;
+    left: 5%;
+}
+
+.banner_txt{
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+}
+
+.banner_txt h1{
+    /* font-family: cursive; */
+    font-family: "Kaushan Script", serif;
+    font-size: 7rem;
+    font-weight: 800;
+}
+
+.banner_txt h3{
+    font-style: italic;
+    color: rgb(226, 145, 145);
+}
+
+.banner_btn{
+    margin: 80px auto 0;
+}
+
+.banner_btn a{
+    text-decoration: none;
+    width: 150px;
+    font-size: 1.2rem;
+    color: white;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    border: 1px solid wheat;
+    position: relative;
+    z-index: 1;
+    transition: color .5s;
+}
+
+.banner_btn a span{
+    /* width: 50%; */
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+    transition: .5s;
+}
+
+.banner_btn a:hover{
+    color: black;
+}
+
+.banner_btn a:hover span{
+    width: 100%;
+
+}
+
+/* side nav starts */
+
+#sideNav{
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    /* right: 0; when it will dis played */
+    right: -250px;
+    top: 0;
+    background: #009688;
+    z-index: 2;
+    transition: .5s;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+/* menu button */
+
+#menuBtn{
+    width: 50px;
+    height: 50px;
+    background: #009688;
+    padding-top: 15px;
+    position: fixed;
+    text-align: center;
+    top: 20px;
+    right: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.fa-bars{
+    color: #fff;
+    font-size: 1.2rem;
+
+}
+
+/* features */
+
+#features{
+    width: 100%;
+    margin: 50px auto;
+}
+
+.title_txt{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.title_txt p{
+    margin-top: auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #009688;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.title_txt p::after{
+    content: '';
+    width: 50px;
+    height: 40px;
+    background: linear-gradient(#950189, #fff);
+    position: absolute;
+    /* top: 0; */
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.title_txt h1{
+    font-size: 3.5rem;
+}
+
+.feature_box{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: auto;
+}
+
+.feature{
+    flex-basis: 50%;
+}
+
+.feature_img{
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.feature_img img{
+    width: 75%;
+    border-radius: 10px;
+}
+
+.feature h1{
+    text-align: left;
+    margin-bottom: 10px;
+    color: #019587;
+    font-weight: 100;
+}
+
+.feature_des{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.feature_icon .fa-shield-halved{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    color: #009688;
+    line-height: 50px;
+    border-radius: 8px;
+    border: solid #019587;
+}
+
+.feature_txt p{
+    padding: 0 20px;
+    text-align: initial;
+}
+
+.feature_icon .fa-square-check{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    color: #009688;
+    line-height: 50px;
+    border-radius: 8px;
+    border: solid #019587;
+}
+
+.feature_icon .fa-bangladeshi-taka-sign{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    color: #009688;
+    line-height: 50px;
+    border-radius: 8px;
+    border: solid #019587;
+}
+
+/* ------ services section ----- */
+#service{
+    width: 100%;
+    padding: 70px 0;
+    background: #efefef;
+}
+
+.service_box{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.services{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    color: #fff;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.services img{
+    width: 100%;
+    border-radius: 10px;
+    /* padding: 0 10px; */
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    /* padding: 0 10px; */
+    background: linear-gradient(#0000006c , #009688);
+    opacity: 0;
+    transition: 1s;
+}
+
+.services:hover .overlay{
+    opacity: 1;
+}
+
+.service_des{
+    width: 80%;
+    position: absolute;
+    /* bottom: 40%; */
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.service_des p{
+    font-size: 1rem;
+}
+
+hr{
+    background: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+
+}
+
+.services:hover .service_des{
+    bottom: 40%;
+    opacity: 1;
+}
+
+/* ----- testimonial section */
+
+#testimonial{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.title_txt p{
+    text-transform: uppercase;
+}
+
+.testi_row{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.testi_column{
+    flex-basis: 28%;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px 2px #00000094;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.testi_column p{
+    /* text-align: inherit; */
+    text-align: initial;
+    /* text-align: center; */
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.user img{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+/* if this is applied design looks different . then upper two style should be commented*/
+/* .user img{
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}  */
+
+.user_info .fa-twitter{
+    color: rgb(0, 110, 255);
+    margin-left: 10px;
+}
+
+.user_info small{
+    color: #009688;
+}
+
+.testi_column:hover{
+    /* transform: translateY(7px); */
+    transform: translateY(-7px);
+}
+
+/* ---- footer section -=--- */
+
+#footer{
+    padding: 100px 0 20px;
+    background: #d4d3d3;
+    position: relative;
+}
+
+.footer_row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer_left, .footer_right{
+    flex-basis: 45%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.footer_right{
+    text-align: right;
+}
+
+.footer_row h1{
+    margin: 10px 0;
+}
+
+.footer_row p{
+    line-height: 30px;
+}
+
+.footer_left p i{
+    font-size: 1rem;
+    color: #019587;
+    padding: 0 10px;
+}
+
+.footer_right p i{
+    font-size: 1rem;
+    color: #019587;
+    padding: 0 10px;
+}
+
+.footer_img{
+    max-width: 370px;
+    opacity: 0.1;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.social_links{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #019587;
+}
+
+.social_links i{
+    border: 1px solid #00000094;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 20px;
+    padding-top: 10px;
+    margin: 40px 5px 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.social_links i:hover{
+    background: #019587;
+    color: #fff;
+    transform: translateY(-4px);
+}
+
+ .copy{
+    text-align: center;
+    font-size: .8rem;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .banner_txt h1{
+        font-size: 50px;
+    }
+
+    .banner_btn a{
+        display: block;
+        margin: 20px auto;
+    }
+/* features section */
+    .title_txt h1{
+        font-size: 2.5rem;
+    }
+
+    .feature{
+        flex-basis: 100%;
+    }
+
+    .feature_img{
+        flex-basis: 100%;
+        /* margin: auto; */
+    }
+
+    .feature_img img{
+        width: 100%;
+    }
+
+    /* service section */
+
+    .services{
+        flex-basis: 100%;
+    }
+
+    /* .service_des p{
+        font-size: .8rem;
+    } */
+
+    hr{
+        margin: 5px auto;
+    }
+
+    /* .services:hover .service_des{
+        bottom: 25% !important; 
+   
+    } */
+     /* when contents are more then it will be applicable */
+
+    /* ---- testimonial section ------ */
+
+    .testi_column{
+        flex-basis: 100%;
+    }
+
+    /* ---- footer section ---- */
+
+    .footer_right, .footer_left{
+        flex-basis: 100%;
+        font-size: 10px;
+    }
+
+    .footer_img{
+        top: 25%;
+    }
+
+  }
