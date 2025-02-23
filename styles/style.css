@@ -467,6 +467,11 @@ hr{
 }
 
 @media screen and (max-width: 600px) {
+    .logo{
+        width: 40px;
+        height: 40px;
+        
+    }
     .banner_txt h1{
         font-size: 50px;
     }
